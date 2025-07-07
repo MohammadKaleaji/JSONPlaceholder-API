@@ -64,6 +64,31 @@
 		},
 		{
 			"name": "TODOS 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "03a9c077-c267-4c56-a2cf-65ed329b3fa1",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response format is valid\", function () {",
+							"    const response = pm.response.json();",
+							"    pm.expect(response).to.be.an('object');",
+							"    pm.expect(response).to.have.all.keys('userId', 'id', 'title', 'completed');",
+							"    pm.expect(response.userId).to.be.a('number');",
+							"    pm.expect(response.id).to.be.a('number');",
+							"    pm.expect(response.title).to.be.a('string');",
+							"    pm.expect(response.completed).to.be.a('boolean');",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "28968889-99078f48-17bb-46d6-aa56-93105bf10c29",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
