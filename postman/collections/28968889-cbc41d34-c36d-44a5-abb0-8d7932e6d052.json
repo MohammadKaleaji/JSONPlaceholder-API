@@ -15,7 +15,17 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
-							"});"
+							"});",
+							"pm.test(\"Response format is valid\", function () {",
+							"    const response = pm.response.json();",
+							"    pm.expect(response).to.be.an('object');",
+							"    pm.expect(response).to.have.all.keys('userId', 'id', 'title', 'body');",
+							"    pm.expect(response.userId).to.be.a('number');",
+							"    pm.expect(response.id).to.be.a('number');",
+							"    pm.expect(response.title).to.be.a('string');",
+							"    pm.expect(response.body).to.be.a('string');",
+							"});",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
