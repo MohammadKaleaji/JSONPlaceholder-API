@@ -7,6 +7,21 @@
 	"item": [
 		{
 			"name": "Getting a resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "385c4880-3128-418a-9de3-b48142f88069",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "28968889-795b632b-054f-4a77-9f48-83dab5dcc24d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
