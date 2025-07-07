@@ -61,6 +61,31 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "{{BaseURL}}/todos/1",
+			"id": "28968889-99078f48-17bb-46d6-aa56-93105bf10c29",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/todos/1",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
