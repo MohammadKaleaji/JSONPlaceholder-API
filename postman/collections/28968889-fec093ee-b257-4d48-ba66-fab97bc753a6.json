@@ -4,5 +4,52 @@
 		"name": "User API Tests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "{{BaseURL}}users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fdd4bca5-e7d3-412b-bfee-932d9324b40c",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "28968889-d48d8ab6-314a-4077-9408-47c7bea4b1ca",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"{{name}}\",\n  \"email\": \"{{email}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}users",
+					"host": [
+						"{{BaseURL}}users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
