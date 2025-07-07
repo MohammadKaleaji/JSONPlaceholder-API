@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "28968889-cbc41d34-c36d-44a5-abb0-8d7932e6d052",
+		"name": "JSONPlaceholder API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getting a resource",
+			"id": "28968889-795b632b-054f-4a77-9f48-83dab5dcc24d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
