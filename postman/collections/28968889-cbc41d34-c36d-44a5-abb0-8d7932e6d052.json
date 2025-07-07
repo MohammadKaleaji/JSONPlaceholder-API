@@ -63,7 +63,7 @@
 			"response": []
 		},
 		{
-			"name": "{{BaseURL}}/todos/1",
+			"name": "TODOS 1",
 			"id": "28968889-99078f48-17bb-46d6-aa56-93105bf10c29",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
