@@ -43,12 +43,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts/1?BaseURL=https://jsonplaceholder.typicode.com",
-					"protocol": "https",
+					"raw": "{{BaseURL}}/posts/1",
 					"host": [
-						"jsonplaceholder",
-						"typicode",
-						"com"
+						"{{BaseURL}}"
 					],
 					"path": [
 						"posts",
@@ -56,9 +53,9 @@
 					],
 					"query": [
 						{
-							"key": "BaseURL",
-							"value": "https://jsonplaceholder.typicode.com",
-							"type": "text"
+							"key": "",
+							"value": "",
+							"disabled": true
 						}
 					]
 				}
